@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --ff-primary: "Dancing Script", cursive; 
+    --ff-secondary: "Poppins", sans-serif; 
+}
+
+* {
+    margin:0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    position: relative;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0px;
+}
+
+.logo {
+    display: block;
+    width: 4rem;
+    padding: 0.5rem;
+    float: left;
+    display: grid;
+    align-items: center;
+}
+
+nav {
+    background: #1a1a1a;
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--ff-secondary);
+    justify-content: right;
+    color: #ffd900;
+}
+
+.title {
+    color: #ffd900;
+    font-family: var(--ff-primary);
+    font-weight: 200;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.heading {
+    color: #ffd900;
+    font-family: var(--ff-primary);
+    font-weight: 200;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.element-container:nth-child(1) .heading{
+    margin-top: 20rem;
+}
+
+
+.hero {
+    background-image: url(output-onlinepngtools\(6\).png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-10px) scale(2);
+    z-index: -1;
+}
+
+.timer {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    color: #ffd900;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.container {
+    background-image: url(output-onlinepngtools\ \(1\).png);
+    background-size: cover;
+    background-color: #1a1a1a;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+p {
+    color: #ffd900;
+    text-align: center;
+}
+
+.end{
+    color: #ffd900;
+    z-index: 1000;
+    font-size: 1rem;
+}
+
+.contacts {
+    list-style: none;
+    text-decoration: none;
+    color: #ffd900;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50vh;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contacts a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffd900;
+}
+/* grid template columns: repeat(2, 1fr) for the footer contacts */
